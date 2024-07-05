@@ -3,13 +3,16 @@
 \moderncvstyle{classic}
 \moderncvcolor{orange}
 
+\renewcommand*{\mobilephonesymbol}   {{\Large\faMobilePhone}~}
+\renewcommand*{\emailsymbol}         {{\small\faInbox}~}
+
 \usepackage[utf8]{inputenc}
-\usepackage[scale=0.83]{geometry}
+\usepackage[scale=0.85]{geometry}
 \usepackage{fontawesome}
 
-\name{Andre}{Silva Macedo}
-\title{\normalfont 25 years old, Brazilian}
-\address{\normalfont Belo Horizonte, Brasil}
+\name{André}{Silva Macedo}
+\title{\normalfont 28 years old, Brazilian}
+\address{\normalfont Belo Horizonte, Brazil}
 \phone[mobile]{\normalfont +55~(31)~99838-5766}
 \email{contato@andremacedo.dev}
 \extrainfo{\normalfont\faGithub{ }\httplink{github.com/andreiox}}
@@ -18,41 +21,44 @@
 \makecvtitle
 
 \section{Education}
-\cventry{2016--2019}{Bachelor}{FUMEC University}{Belo Horizonte - Brazil}{\textit{Computer Science}}{}
+\cventry{2016--2019}{Bachelor degree}{FUMEC University}{Belo Horizonte - Brazil}{\textit{Computer Science}}{}
 
 \section{About me}
-\cvitem{}{A dedicated full-stack developer with 5 years of experience in software development. Polyglot programming skills in Java, Node.js and Python. Experience with software development of a new product, from the idea to the delivery. As well as experience in maintenance, refactoring and adding new functionality to an existing software.}
+\cvitem{}{
+    A dedicated full-stack developer with 8 years of experience in software development.
+    Polyglot programming skills in Java, Node.js, Python and, more recently, Clojure.
+    Experience with software development of a new product, from the idea to the delivery.
+    As well as experience in maintenance, refactoring and adding new functionality to an existing software.
+}
 
 \section{Experience}
-\cventry{2020--present}{Team Leader}{Seidor Véritas}{Belo Horizonte}{}{
+\cventry{2022--present}{Senior Software Engineer}{Nubank}{}{}{
+    Working with investments products and integrations with brazilian stock exchange B3 using exclusively Clojure-releated technologies.
+}
+\cventry{2020--2022}{Team Leader}{Seidor Véritas}{}{}{
     Leading the team responsible for the maintenance and evolution of tax documents issuance module (Outbound) from Orbit by Seidor platform.
 }
-\cventry{2019--2020}{Back-end Developer}{Seidor Véritas}{Belo Horizonte}{}{
+\cventry{2019--2020}{Back-end Developer}{Seidor Véritas}{}{}{
     Designed and developed REST micro-services and AWS Lambdas using Node.js and Java 8.
     Development heavily focused in automated tests (unit and integration tests) and API documentation since the API is used by external clients;
     Responsible for the deploy of the whole infrastructure using Infrastructe as Code (aws-cdk).
     Infra composed by Elastic Beanstalk, ECS, Fargate, Lambda, API Gateway, and more.
 }
-\cventry{2018--2019}{Full-stack Developer}{Melhor Voo}{Belo Horizonte}{}{
+\cventry{2018--2019}{Full-stack Developer}{Melhor Voo}{}{}{
     Developed various web pages and components using Node.js, React.js, Redux and JSS;
     Designed and implemented RESTful APIs using Express.js, Laravel and Django Rest Framework;
     Worked with MySQL and MongoDB databases;
     Developed web crawlers using Node.js and Python;
 }
-\cventry{2016--2018}{Full-stack Java Developer}{Registrocom.com}{Belo Horizonte}{}{
+\cventry{2016--2018}{Full-stack Java Developer}{Registrocom.com}{}{}{
     Developed mostly web applications using Java 7, JSF 2.2 and 2, Primefaces 6 and 3, JPA (Hibernate and Eclipselink), MySQL and Apache Tomcat 8.
-}
-\cventry{2014--2016}{IT Support}{SMTE Construções e Montagens}{Belo Horizonte}{}{
-    Maintenance of the internal network and work stations;
-    Installation and configuration of CCTV;
-    Network Certification.
 }
 
 \section{Knowledge}
-\cvitem{Frontend}{React, Primefaces}
-\cvitem{Backend}{Node.js, Python, Java}
+\cvitem{Frontend}{React, Primefaces, Flutter}
+\cvitem{Backend}{Node.js, Java, Clojure, Python}
 \cvitem{Frameworks}{Express, Fastify, Django, Flask, Spring Boot}
-\cvitem{Databases}{MySQL, Postgres, MongoDB, DynamoDB}
+\cvitem{Databases}{MySQL, Postgres, MongoDB, DynamoDB, Datomic}
 \cvitem{AWS}{Lambda, Step Functions, ECS, Fargate, EC2, Elastic Beanstalk, S3, API Gateway, Lambda Authorizers, RDS, Cognito, SQS, CodeBuild, CodePipeline, CDK (infra as code)}
 \cvitem{Other}{Linux, Git, Scrum, Automated Tests}
 
