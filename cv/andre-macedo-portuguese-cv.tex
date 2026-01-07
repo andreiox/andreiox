@@ -3,17 +3,17 @@
 \moderncvstyle{classic}
 \moderncvcolor{orange}
 
-\renewcommand*{\mobilephonesymbol}   {{\Large\faMobilePhone}~}
-\renewcommand*{\emailsymbol}         {{\small\faInbox}~}
+\colorlet{lastnamecolor}{orange}
+\colorlet{firstnamecolor}{orange}
 
 \usepackage[utf8]{inputenc}
 \usepackage[scale=0.85]{geometry}
-\usepackage{fontawesome}
+\usepackage{lmodern}
 
 \name{André}{Silva Macedo}
-\title{\normalfont 28 anos, Brasileiro}
+\title{\normalfont 29 anos, Brasileiro}
 \address{\normalfont Belo Horizonte, Brasil}
-\phone[mobile]{\normalfont +55~(31)~99838-5766}
+\phone{\normalfont +55~(31)~99838-5766}
 \email{contato@andremacedo.dev}
 \extrainfo{\normalfont\faGithub{ }\httplink{github.com/andreiox}}
 
@@ -25,20 +25,19 @@
 
 \section{Sobre mim}
 \cvitem{}{
-    Um desenvolvedor full-stack dedicado com 8 anos de experiência em desenvolvimento de software.
-    Poliglota se tratando em linguagens de programação em Java, Node.js, Python e, mais recentemente, Clojure.
-    Experiência com desenvolvimento de software de um novo produto, da ideia à entrega.
-    Bem como experiência em manutenção, refatoração e adição de funcionalidades a um software existente.
+    Um engenheiro de software com 10 anos de experiência em desenvolvimento de software.
+    Ao longo da minha carreira, utilizei diversas linguagens de programação, incluindo Java, Node.js, Python e, mais recentemente, Clojure, me adaptando com facilidade a diferentes arquiteturas e fluxos de trabalho.
+    Sempre atuei em todas as etapas do ciclo de vida do desenvolvimento de software, desde o desenho e arquitetura dos sistemas até a implementação, deploy e manutenção contínua, com foco na construção de sistemas escaláveis, confiáveis e de fácil manutenção.
 }
 
 \section{Experiência}
-\cventry{2022--agora}{Engenheiro de Software Sênior}{Nubank}{}{}{
-    Trabalho na área de investimentos com produtos da B3 usando tecnologias relacionadas ao Clojure.
+\cventry{2022--2026}{Engenheiro de Software Sênior}{Nubank}{}{}{
+    Atuei em sistemas de grande escala no domínio de Investimentos, lidando com workloads de alta taxa de processamento e baixa latência, integrações complexas com terceiros e requisitos altos de consistência de dados.
+    Realizei integrações utilizando os protocolos FIX e SOAP, processando grandes volumes de dados em batch e em tempo real, aplicando controle de concorrência, idempotência e tolerância a falhas.
+    Forte foco em observabilidade e escalabilidade, utilizando Clojure, Kafka, Kubernetes, Datomic e DynamoDB, além de stacks de monitoramento para suportar sistemas que atendem milhões de usuários diariamente.
 }
-\cventry{2020--2022}{Team Leader}{Seidor Véritas}{}{}{
+\cventry{2019--2022}{Desenvolvedor Back-end e Team Leader}{Seidor Véritas}{}{}{
     Lider da equipe responsável pela manutenção e evolução do módulo de emissão de documentos fiscais (Outbound) da plataforma Orbit by Seidor.
-}
-\cventry{2019--2020}{Desenvolvedor Back-end}{Seidor Véritas}{}{}{
     Desenhei e implementei micro-serviços REST e AWS Lambdas usando Node.js e Java 8.
     Desenvolvimento bastante focado em testes automatizados (testes de unidade e integração) e documentação da API já que a API é utilizada por clientes externos;
     Responsável pelo deploy de toda infraestrutura utilizando Infraestrutura como Código (aws-cdk).
@@ -54,16 +53,15 @@
     Desenvolvi em grande parte aplicações web usando Java 7, JSF 2.2 e 2, Primefaces 6 e 3, JPA (Hibernate e Eclipselink), MySQL e Apache Tomcat 8.
 }
 
-\section{Knowledge}
+\section{Conhecimento}
 \cvitem{Frontend}{React, Primefaces, Flutter}
 \cvitem{Backend}{Node.js, Java, Clojure, Python}
 \cvitem{Frameworks}{Express, Fastify, Django, Flask, Spring Boot}
 \cvitem{Databases}{MySQL, Postgres, MongoDB, DynamoDB, Datomic}
-\cvitem{AWS}{Lambda, Step Functions, ECS, Fargate, EC2, Elastic Beanstalk, S3, API Gateway, Lambda Authorizers, RDS, Cognito, SQS, CodeBuild, CodePipeline, CDK (infra as code)}
-\cvitem{Other}{Linux, Git, Scrum, Automated Tests}
+\cvitem{Infra}{Kubernetes, Kafka, RabbitMQ, AWS SQS, AWS Lambda, AWS ECS, AWS EC2, AWS S3}
+\cvitem{Other}{Prometheus, Grafana, Splunk, Linux, Git, Scrum, Automated Tests}
 
 \section{Idiomas}
-\cvitemwithcomment{Português}{Nativo}{}
-\cvitemwithcomment{Inglês}{Avançado}{}
+\cvitemwithcomment{}{Português Nativo e Inglês Avançado}{}
 
 \end{document}

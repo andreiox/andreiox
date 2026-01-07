@@ -3,17 +3,18 @@
 \moderncvstyle{classic}
 \moderncvcolor{orange}
 
-\renewcommand*{\mobilephonesymbol}   {{\Large\faMobilePhone}~}
-\renewcommand*{\emailsymbol}         {{\small\faInbox}~}
+\colorlet{lastnamecolor}{orange}
+\colorlet{firstnamecolor}{orange}
 
 \usepackage[utf8]{inputenc}
 \usepackage[scale=0.85]{geometry}
-\usepackage{fontawesome}
+\usepackage{lmodern}
+
 
 \name{André}{Silva Macedo}
-\title{\normalfont 28 years old, Brazilian}
+\title{\normalfont 29 years old, Brazilian}
 \address{\normalfont Belo Horizonte, Brazil}
-\phone[mobile]{\normalfont +55~(31)~99838-5766}
+\phone{\normalfont +55~(31)~99838-5766}
 \email{contato@andremacedo.dev}
 \extrainfo{\normalfont\faGithub{ }\httplink{github.com/andreiox}}
 
@@ -25,20 +26,18 @@
 
 \section{About me}
 \cvitem{}{
-    A dedicated full-stack developer with 8 years of experience in software development.
-    Polyglot programming skills in Java, Node.js, Python and, more recently, Clojure.
-    Experience with software development of a new product, from the idea to the delivery.
-    As well as experience in maintenance, refactoring and adding new functionality to an existing software.
+    A dedicated software engineer with 10 years of experience in software development.
+    Throughout my career, I have used multiple programming languages, including Java, Node.js, Python, and more recently Clojure, adapting with ease to different architectures and workflows.
+    Always been involved in all stages of the software development lifecycle, from system design and architecture to implementation, deployment, and ongoing maintenance, always focusing on building scalable, reliable, and maintainable systems.
 }
 
 \section{Experience}
-\cventry{2022--present}{Senior Software Engineer}{Nubank}{}{}{
-    Working with investments products and integrations with brazilian stock exchange B3 using exclusively Clojure-releated technologies.
-}
-\cventry{2020--2022}{Team Leader}{Seidor Véritas}{}{}{
+\cventry{2022--2026}{Senior Software Engineer}{Nubank}{}{}{
+    Worked on large-scale financial systems in the Investments domain, dealing with high-throughput, low-latency workloads, complex third-party integrations, and high data consistency requirements.
+    Made integrations with FIX and SOAP protocols, processing high-volume batch and real-time data, and applying concurrency control, idempotency, and fault tolerance.
+    Strong focus on observability and scalability, using Clojure, Kafka, Kubernetes, Datomic and DynamoDB databases, and monitoring stacks to support systems serving millions of users daily.}
+\cventry{2019--2022}{Back-end Developer and Team Leader}{Seidor Véritas}{}{}{
     Leading the team responsible for the maintenance and evolution of tax documents issuance module (Outbound) from Orbit by Seidor platform.
-}
-\cventry{2019--2020}{Back-end Developer}{Seidor Véritas}{}{}{
     Designed and developed REST micro-services and AWS Lambdas using Node.js and Java 8.
     Development heavily focused in automated tests (unit and integration tests) and API documentation since the API is used by external clients;
     Responsible for the deploy of the whole infrastructure using Infrastructe as Code (aws-cdk).
@@ -59,11 +58,10 @@
 \cvitem{Backend}{Node.js, Java, Clojure, Python}
 \cvitem{Frameworks}{Express, Fastify, Django, Flask, Spring Boot}
 \cvitem{Databases}{MySQL, Postgres, MongoDB, DynamoDB, Datomic}
-\cvitem{AWS}{Lambda, Step Functions, ECS, Fargate, EC2, Elastic Beanstalk, S3, API Gateway, Lambda Authorizers, RDS, Cognito, SQS, CodeBuild, CodePipeline, CDK (infra as code)}
-\cvitem{Other}{Linux, Git, Scrum, Automated Tests}
+\cvitem{Infra}{Kubernetes, Kafka, RabbitMQ, AWS SQS, AWS Lambda, AWS ECS, AWS EC2, AWS S3}
+\cvitem{Other}{Prometheus, Grafana, Splunk, Linux, Git, Scrum, Automated Tests}
 
 \section{Languages}
-\cvitemwithcomment{Portuguese}{Native}{}
-\cvitemwithcomment{English}{Full professional proficiency}{}
+\cvitemwithcomment{}{Native in Portuguese and full professional proficiency in English}{}
 
 \end{document}
